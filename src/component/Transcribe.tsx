@@ -61,7 +61,7 @@ const VoiceInput: React.FC = () => {
           .split(',')[1]; // remove data prefix
 
         try {
-          const { data, error } = await supabase.functions.invoke('transcribe', {
+          const { data, error } = await supabase.functions.invoke('transcribe-flash', {
             body: {
               audio: base64Audio,
               mimeType: 'audio/webm'
