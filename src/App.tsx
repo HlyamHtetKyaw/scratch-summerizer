@@ -6,12 +6,14 @@ import BurmeseSummarizer from './component/BurmeseSummarizer'
 import VoiceInput from './component/Transcribe'
 import VoiceInputGS from './component/TranscribeByGS'
 import AudioUploader from './component/AudioUploader'
+import TextSummarizer from './component/TextSummarizer'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <AudioUploader/>
+      {/* <TextSummarizer voiceNoteDetailId={46}/> */}
     </>
   )
 }
